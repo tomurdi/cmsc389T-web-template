@@ -13,3 +13,6 @@ Rose quartz: #B2A3B5
 
 ## CSS
 .img -> where you can adjust image size
+
+## Custom change
+- added Handshake link to index.html
