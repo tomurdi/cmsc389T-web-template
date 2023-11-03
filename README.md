@@ -14,5 +14,8 @@ Rose quartz: #B2A3B5
 ## CSS
 .img -> where you can adjust image size
 
-## Custom change
-- added Handshake link to index.html
+## Github Pages Link
+https://tomurdi.github.io/cmsc389T-web-template/
+
+## Terpconnect Link
+https://terpconnect.umd.edu/~turdinol/cmsc389T-web-template/
