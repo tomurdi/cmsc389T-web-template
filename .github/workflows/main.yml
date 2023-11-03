@@ -1,17 +1,13 @@
-name: clone workflow
-on:
-  workflow_dispatch:
+name: CI
+
+on: [push, pull_request, workflow_dispatch]
+
 jobs:
-  job_one:
-    name: Clone
+  build:
     runs-on: ubuntu-latest
+    container: openjdk
     steps:
-      - name: testing
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          script: |
-              git clone https://github.com/tomurdi/cmsc389T-web-template.git
+      - uses: actions/checkout@v2
+      - name: Build Project
+        run: |
+        npm install && npm run build
